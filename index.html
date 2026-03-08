@@ -1,1 +1,115 @@
-<h1> Privacy Policy </h1>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ChessUnlock Privacy Policy</title>
+  <style>
+    :root { --fg:#111; --muted:#555; --bg:#fff; --card:#f6f7f9; --link:#0b57d0; }
+    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color:var(--fg); background:var(--bg); }
+    header { padding:28px 16px; background:var(--card); border-bottom:1px solid #e6e6e6; }
+    main { max-width: 900px; margin: 0 auto; padding: 24px 16px 64px; }
+    h1 { margin:0 0 8px; font-size: 28px; }
+    .sub { margin:0; color:var(--muted); }
+    h2 { margin-top: 28px; font-size: 20px; }
+    p, li { line-height: 1.6; }
+    a { color: var(--link); }
+    code { background:#f2f2f2; padding:2px 6px; border-radius:6px; }
+    .box { background: var(--card); padding:16px; border-radius: 12px; border:1px solid #e6e6e6; }
+    .small { color: var(--muted); font-size: 14px; }
+    ul { padding-left: 20px; }
+  </style>
+</head>
+<body>
+  <header>
+    <main>
+      <h1>Privacy Policy — ChessUnlock</h1>
+      <p class="sub"><strong>Developer:</strong> Aimlessoul</p>
+      <p class="sub"><strong>Last updated:</strong> <span id="date"></span></p>
+    </main>
+  </header>
+
+  <main>
+    <div class="box">
+      <p><strong>Summary:</strong> ChessUnlock is an app-locker that blocks selected apps until you solve a chess puzzle. We do not sell your data. We do not run ads yet. Most app data stays on your device.</p>
+    </div>
+
+    <h2>1) What ChessUnlock does</h2>
+    <p>ChessUnlock lets you select apps to lock. When you try to open a locked app while locked mode is active, ChessUnlock shows an on-screen blocking overlay and lets you unlock by solving a chess puzzle.</p>
+
+    <h2>2) Information we collect</h2>
+    <p><strong>We do not collect personal information like your name, phone number, contacts, or precise location.</strong></p>
+    <p>The app stores certain data locally on your device to function:</p>
+    <ul>
+      <li><strong>Locked apps list</strong> (package names) to know which apps you chose to lock.</li>
+      <li><strong>Unlock state</strong> (e.g., timed break/unlock until timestamp or indefinite unlock) to enforce locking correctly.</li>
+      <li><strong>Settings</strong> (e.g., puzzle difficulty).</li>
+      <li><strong>Basic local statistics</strong> (e.g., solved count, best rating, first-try solved rate) to display your progress.</li>
+    </ul>
+    <p class="small">This information is stored locally using on-device storage (e.g., Android SharedPreferences). It is not uploaded to our servers.</p>
+
+    <h2>3) Permissions and why we need them</h2>
+    <p>ChessUnlock requests the following permissions so it can work as an app locker:</p>
+    <ul>
+      <li><strong>Usage Access (Usage Stats)</strong>: To detect which app is currently in the foreground, so we can lock the selected apps when needed.</li>
+      <li><strong>Display over other apps (Overlay)</strong>: To show a blocking screen over a locked app until you unlock.</li>
+      <li><strong>Foreground Service</strong>: To keep the watcher running reliably so the lock is enforced when your timed break ends.</li>
+      <li><strong>Notifications</strong>: To show the required persistent notification while the foreground service is running (Android requirement).</li>
+      <li><strong>Internet</strong>: To fetch chess puzzles from the Lichess API.</li>
+      <li><strong>Receive Boot Completed</strong> (if enabled on your device): To restart the watcher after reboot so locking can resume. Some device brands may restrict auto-start; you may need to allow auto-start/battery exceptions for consistent behavior.</li>
+    </ul>
+
+    <h2>4) Third-party services</h2>
+    <h3>4.1 Lichess puzzle API</h3>
+    <p>ChessUnlock fetches puzzles from Lichess using their public puzzle endpoint. This requires an internet connection. We do not control Lichess and their servers may log standard request data (such as IP address) as part of normal web operations.</p>
+    <p class="small">Lichess API reference: <code>https://lichess.org/api/puzzle/next</code></p>
+
+    <h3>4.2 Ads / analytics</h3>
+    <p>ChessUnlock currently does not display real ads and does not integrate analytics SDKs. If we add ads or analytics in the future, we will update this policy and Play Console disclosures.</p>
+
+    <h2>5) How we use information</h2>
+    <ul>
+      <li>To enforce app locking and unlock timers.</li>
+      <li>To show your settings and local progress statistics.</li>
+      <li>To fetch puzzles from Lichess so you can unlock.</li>
+    </ul>
+
+    <h2>6) Data sharing</h2>
+    <p>We do not sell your personal data. We do not share your device-stored lock list or stats with third parties.</p>
+    <p>The only network communication is fetching puzzles from Lichess (see section 4.1).</p>
+
+    <h2>7) Data retention and deletion</h2>
+    <p>All app data is stored locally on your device. You can remove it at any time by:</p>
+    <ul>
+      <li>Clearing the app’s storage in Android settings, or</li>
+      <li>Uninstalling the app.</li>
+    </ul>
+
+    <h2>8) Security</h2>
+    <p>We aim to keep the app minimal and store data locally. No method of electronic storage is 100% secure, but we do not operate our own server storing your personal data.</p>
+
+    <h2>9) Children’s privacy</h2>
+    <p>ChessUnlock is not designed to collect personal information from children. We do not knowingly collect personal information from children.</p>
+
+    <h2>10) Changes to this policy</h2>
+    <p>We may update this policy as the app evolves (for example, if ads or analytics are added). We will update the “Last updated” date above.</p>
+
+    <h2>11) Contact</h2>
+    <p>If you have questions about this Privacy Policy, contact:</p>
+    <ul>
+      <li><strong>Email:</strong> <a href="mailto:aimlessoulapps@gmail.com">aimlessoulapps@gmail.com</a></li>
+    </ul>
+
+    <p class="small">App: ChessUnlock • Package: <code>com.aimlessoul.chessunlock</code></p>
+  </main>
+
+  <script>
+    // Set "Last updated" to today's date automatically (UTC).
+    const d = new Date();
+    const yyyy = d.getUTCFullYear();
+    const mm = String(d.getUTCMonth() + 1).padStart(2, '0');
+    const dd = String(d.getUTCDate()).padStart(2, '0');
+    document.getElementById('date').textContent = `${yyyy}-${mm}-${dd}`;
+  </script>
+</body>
+</html>
