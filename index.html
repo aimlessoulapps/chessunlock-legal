@@ -1,177 +1,343 @@
 <!doctype html>
+
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ChessUnlock Privacy Policy</title>
   <style>
-    :root { --fg:#111; --muted:#555; --bg:#fff; --card:#f6f7f9; --link:#0b57d0; }
-    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color:var(--fg); background:var(--bg); }
-    header { padding:28px 16px; background:var(--card); border-bottom:1px solid #e6e6e6; }
-    main { max-width: 900px; margin: 0 auto; padding: 24px 16px 64px; }
-    h1 { margin:0 0 8px; font-size: 28px; }
-    .sub { margin:0; color:var(--muted); }
-    h2 { margin-top: 28px; font-size: 20px; }
-    h3 { margin-top: 20px; font-size: 17px; }
-    p, li { line-height: 1.6; }
-    a { color: var(--link); }
-    code { background:#f2f2f2; padding:2px 6px; border-radius:6px; }
-    .box { background: var(--card); padding:16px; border-radius: 12px; border:1px solid #e6e6e6; }
-    .small { color: var(--muted); font-size: 14px; }
-    ul { padding-left: 20px; }
+    :root {
+      --fg: #111;
+      --muted: #555;
+      --bg: #fff;
+      --card: #f6f7f9;
+      --link: #0b57d0;
+    }
+
+```
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--fg);
+  background: var(--bg);
+}
+
+header {
+  padding: 28px 16px;
+  background: var(--card);
+  border-bottom: 1px solid #e6e6e6;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px 16px 64px;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 28px;
+}
+
+.sub {
+  margin: 0;
+  color: var(--muted);
+}
+
+h2 {
+  margin-top: 28px;
+  font-size: 20px;
+}
+
+h3 {
+  margin-top: 20px;
+  font-size: 17px;
+}
+
+p,
+li {
+  line-height: 1.6;
+}
+
+a {
+  color: var(--link);
+}
+
+code {
+  background: #f2f2f2;
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+.box {
+  background: var(--card);
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #e6e6e6;
+}
+
+.small {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+ul {
+  padding-left: 20px;
+}
+```
+
   </style>
 </head>
+
 <body>
   <header>
     <main>
       <h1>Privacy Policy — ChessUnlock</h1>
       <p class="sub"><strong>Developer:</strong> Aimlessoul</p>
-      <p class="sub"><strong>Last updated:</strong> 2026-05-19</p>
+      <p class="sub"><strong>Last updated:</strong> 2026-06-11</p>
     </main>
   </header>
 
   <main>
     <div class="box">
-      <p><strong>Summary:</strong> ChessUnlock is an app-locker that blocks selected apps until you solve a chess puzzle. Most lock-related data stays on your device. The app uses third-party services including Lichess for puzzles, Google AdMob for ads, Firebase Analytics for app usage analytics, and Firebase Crashlytics for crash reporting. We do not sell your personal data.</p>
+      <p>
+        <strong>Summary:</strong> ChessUnlock helps users reduce distractions by locking selected apps until they solve a chess puzzle. Most lock-related data stays on your device. The app uses third-party services including Lichess for chess puzzles, Google AdMob for ads, Firebase Analytics for app usage analytics, and Firebase Crashlytics for crash reporting. We do not sell your personal data.
+      </p>
     </div>
 
-    <h2>1) What ChessUnlock does</h2>
-    <p>ChessUnlock lets you select apps to lock. When you try to open a locked app while locked mode is active, ChessUnlock shows an on-screen blocking overlay and lets you unlock by solving a chess puzzle.</p>
-    <p>The app may also let you continue solving extra puzzles after unlocking, choose an unlock time, use hints or skips, and send feedback.</p>
+```
+<h2>1) What ChessUnlock does</h2>
+<p>
+  ChessUnlock lets you choose distracting apps and restrict access to them until you solve a chess puzzle. On Android, the app may use an on-screen blocking overlay. On iOS, the app uses Apple Screen Time-related permissions and system shielding features to restrict selected apps.
+</p>
+<p>
+  The app may also let you continue solving extra puzzles after unlocking, choose an unlock time, use hints or skips, and send feedback or support requests.
+</p>
 
-    <h2>2) Information we collect</h2>
-    <p><strong>We do not intentionally collect personal information like your name, phone number, contacts, or precise location.</strong></p>
+<h2>2) Information we collect</h2>
+<p>
+  <strong>We do not intentionally collect personal information like your name, phone number, contacts, personal messages, photos, or precise location.</strong>
+</p>
 
-    <h3>2.1 Information stored locally on your device</h3>
-    <p>The app stores certain data locally on your device so the app can work correctly:</p>
-    <ul>
-      <li><strong>Locked apps list</strong> such as package names, app names, and app icons, so ChessUnlock knows which apps you chose to lock.</li>
-      <li><strong>Unlock state</strong> such as unlock timer, lock status, or unlock-until timestamp.</li>
-      <li><strong>Settings</strong> such as puzzle difficulty/rating level, theme, and app preferences.</li>
-      <li><strong>Basic local statistics</strong> such as solved puzzle count, best puzzle rating, and accuracy/first-try stats.</li>
-      <li><strong>Onboarding status</strong> so the app knows whether to show first-time setup guidance.</li>
-    </ul>
-    <p class="small">This lock-related information is stored locally using on-device storage such as Android SharedPreferences or similar local storage. We do not upload your exact locked apps list to our own server.</p>
+<h3>2.1 Information stored locally on your device</h3>
+<p>
+  The app stores certain data locally on your device so the app can work correctly:
+</p>
+<ul>
+  <li><strong>Selected locked apps:</strong> On Android, this may include package names, app names, and app icons so ChessUnlock knows which apps you chose to lock. On iOS, selected apps, categories, or web domains may be represented using Apple Screen Time / FamilyControls tokens.</li>
+  <li><strong>Unlock state:</strong> Such as lock status, unlock timer, unlock-until timestamp, or break duration.</li>
+  <li><strong>Settings:</strong> Such as puzzle difficulty/rating level, theme, strictness, and app preferences.</li>
+  <li><strong>Basic local statistics:</strong> Such as solved puzzle count, best puzzle rating, accuracy, and first-try stats.</li>
+  <li><strong>Onboarding status and choices:</strong> So the app knows whether to show first-time setup guidance and can personalize the app experience.</li>
+</ul>
+<p class="small">
+  Lock-related information is stored locally using on-device storage such as Android SharedPreferences, iOS local storage, or Apple App Group storage where needed for Screen Time extensions. We do not upload your exact locked apps list to our own server.
+</p>
 
-    <h3>2.2 Analytics information</h3>
-    <p>ChessUnlock uses Firebase Analytics to understand how the app is used and to improve the app experience. Analytics may collect app usage events such as:</p>
-    <ul>
-      <li>App opened or onboarding shown.</li>
-      <li>Locked apps saved, using only safe counts such as the number of locked apps.</li>
-      <li>Overlay shown and Open ChessUnlock button tapped.</li>
-      <li>Puzzle started, puzzle solved, Solve another tapped, and Unlock apps tapped.</li>
-      <li>Hint or Skip interactions and ad reward/failure events.</li>
-      <li>Difficulty/rating level changes.</li>
-      <li>Unlock time selected.</li>
-      <li>Feedback option opened.</li>
-    </ul>
-    <p>We do not intentionally send your exact locked app names, package names, contacts, email, phone number, or full installed app list through Analytics.</p>
-    <p>Firebase Analytics may also collect data such as number of users, session statistics, approximate location, browser/device information, app-instance identifiers, and advertising identifiers where available.</p>
+<h3>2.2 iOS Screen Time / FamilyControls information</h3>
+<p>
+  On iOS, ChessUnlock may request Screen Time-related permission so you can select apps to restrict and so the app can apply system shields to those selected apps. Apple may represent selected apps using tokens instead of normal app names.
+</p>
+<p>
+  These selected app tokens are used only for the locking feature, including applying shields, removing shields after a successful puzzle unlock, and reapplying shields when the unlock time ends. ChessUnlock does not use Screen Time permission to read your messages, photos, personal content inside other apps, or browsing content.
+</p>
 
-    <h3>2.3 Crash and diagnostic information</h3>
-    <p>ChessUnlock uses Firebase Crashlytics to detect, diagnose, and fix crashes and stability issues. Crash reports may include:</p>
-    <ul>
-      <li>Crash stack traces.</li>
-      <li>Relevant app state at the time of the crash.</li>
-      <li>Device metadata such as device model, operating system version, and app version.</li>
-      <li>Crashlytics installation identifiers.</li>
-      <li>Breadcrumb logs showing recent app actions before a crash.</li>
-    </ul>
-    <p>Crashlytics is used only to improve app stability and fix bugs.</p>
+<h3>2.3 Analytics information</h3>
+<p>
+  ChessUnlock uses Firebase Analytics to understand how the app is used and to improve the app experience. Analytics may collect app usage events such as:
+</p>
+<ul>
+  <li>App opened or onboarding shown.</li>
+  <li>Selected apps saved, using safe counts such as the number of selected apps.</li>
+  <li>Lock screen, shield, or overlay shown.</li>
+  <li>Open ChessUnlock button tapped.</li>
+  <li>Puzzle started, puzzle solved, Solve another tapped, and Unlock apps tapped.</li>
+  <li>Hint or Skip interactions and ad reward/failure events.</li>
+  <li>Difficulty/rating level changes.</li>
+  <li>Unlock time selected.</li>
+  <li>Feedback or support option opened.</li>
+</ul>
+<p>
+  We do not intentionally send your exact locked app names, package names, Screen Time tokens, contacts, email, phone number, or full installed app list through Analytics.
+</p>
+<p>
+  Firebase Analytics may also collect information such as number of users, session statistics, approximate location, device information, app-instance identifiers, and advertising identifiers where available.
+</p>
 
-    <h3>2.4 Advertising information</h3>
-    <p>ChessUnlock uses Google AdMob to show ads, including banner ads and rewarded ads for features such as Hint and Skip. AdMob and the Google Mobile Ads SDK may collect and share data such as:</p>
-    <ul>
-      <li>IP address, which may be used to estimate general location.</li>
-      <li>User product interactions such as app launches, taps, ad impressions, and video views.</li>
-      <li>Diagnostic information related to app and SDK performance.</li>
-      <li>Device and account identifiers such as Android Advertising ID, app set ID, and related identifiers where available.</li>
-    </ul>
-    <p>This data may be used for advertising, analytics, fraud prevention, and improving ad performance.</p>
+<h3>2.4 Crash and diagnostic information</h3>
+<p>
+  ChessUnlock uses Firebase Crashlytics to detect, diagnose, and fix crashes and stability issues. Crash reports may include:
+</p>
+<ul>
+  <li>Crash stack traces.</li>
+  <li>Relevant app state at the time of the crash.</li>
+  <li>Device metadata such as device model, operating system version, and app version.</li>
+  <li>Crashlytics installation identifiers.</li>
+  <li>Breadcrumb logs showing recent app actions before a crash.</li>
+</ul>
+<p>
+  Crashlytics is used only to improve app stability and fix bugs.
+</p>
 
-    <h3>2.5 Feedback information</h3>
-    <p>If you choose to send feedback, we may receive the information you voluntarily provide, such as your message, device details you include, screenshots you attach, or your email address if you contact us by email. Feedback is optional.</p>
+<h3>2.5 Advertising information</h3>
+<p>
+  ChessUnlock uses Google AdMob to show ads, including banner ads and rewarded ads for features such as Hint and Skip. AdMob and the Google Mobile Ads SDK may collect and process data such as:
+</p>
+<ul>
+  <li>IP address, which may be used to estimate general location.</li>
+  <li>User product interactions such as app launches, taps, ad impressions, and video views.</li>
+  <li>Diagnostic information related to app and SDK performance.</li>
+  <li>Device identifiers and advertising identifiers, such as Android Advertising ID, iOS advertising identifiers where available, app set ID, app instance identifiers, or related identifiers.</li>
+</ul>
+<p>
+  This data may be used for advertising, analytics, measurement, fraud prevention, security, and improving ad performance.
+</p>
 
-    <h2>3) Permissions and why we need them</h2>
-    <p>ChessUnlock requests certain permissions so it can work as an app locker:</p>
-    <ul>
-      <li><strong>Usage Access / Usage Stats</strong>: To detect which app is currently in the foreground, so ChessUnlock can lock selected apps when needed.</li>
-      <li><strong>Display over other apps / Overlay</strong>: To show a blocking screen over a locked app until you solve a puzzle or unlock.</li>
-      <li><strong>Foreground Service</strong>: To keep the app watcher running reliably so the lock can be enforced.</li>
-      <li><strong>Notifications</strong>: To show the required persistent notification while the foreground service is running, where required by Android.</li>
-      <li><strong>Internet</strong>: To fetch chess puzzles, load ads, send analytics events, report crashes, and open feedback links.</li>
-      <li><strong>Advertising ID</strong>: Used by Google AdMob and Google/Firebase services for ads, analytics, and measurement where available.</li>
-      <li><strong>Receive Boot Completed</strong> if enabled: To restart the watcher after device reboot so locking can resume. Some device brands may restrict auto-start; you may need to allow auto-start or battery exceptions for consistent behavior.</li>
-    </ul>
+<h3>2.6 Feedback and support information</h3>
+<p>
+  If you choose to send feedback or contact support, we may receive information you voluntarily provide, such as your message, device details you include, screenshots you attach, or your email address. Feedback and support contact are optional.
+</p>
 
-    <h2>4) Third-party services</h2>
+<h2>3) Permissions and why we need them</h2>
+<p>
+  ChessUnlock requests certain permissions so it can work as an app locker and chess puzzle unlock tool:
+</p>
 
-    <h3>4.1 Lichess puzzle API</h3>
-    <p>ChessUnlock fetches chess puzzles from Lichess using their public puzzle endpoint. This requires an internet connection. We do not control Lichess, and their servers may log standard request data such as IP address as part of normal web operations.</p>
-    <p class="small">Lichess API reference: <code>https://lichess.org/api/puzzle/next</code></p>
+<h3>3.1 Android permissions</h3>
+<ul>
+  <li><strong>Usage Access / Usage Stats:</strong> To detect which app is currently in the foreground, so ChessUnlock can lock selected apps when needed.</li>
+  <li><strong>Display over other apps / Overlay:</strong> To show a blocking screen over a locked app until you solve a puzzle or unlock.</li>
+  <li><strong>Foreground Service:</strong> To keep the app watcher running reliably so the lock can be enforced.</li>
+  <li><strong>Notifications:</strong> To show the required persistent notification while the foreground service is running, where required by Android.</li>
+  <li><strong>Internet:</strong> To fetch chess puzzles, load ads, send analytics events, report crashes, and open feedback/support links.</li>
+  <li><strong>Advertising ID:</strong> Used by Google AdMob and Google/Firebase services for ads, analytics, and measurement where available.</li>
+  <li><strong>Receive Boot Completed, if enabled:</strong> To restart the watcher after device reboot so locking can resume. Some device brands may restrict auto-start; you may need to allow auto-start or battery exceptions for consistent behavior.</li>
+</ul>
 
-    <h3>4.2 Google AdMob</h3>
-    <p>ChessUnlock uses Google AdMob to show ads. AdMob may collect and share information such as ad interactions, device identifiers, IP address, diagnostic information, and Advertising ID where available. This is used for advertising, analytics, measurement, and fraud prevention.</p>
-    <p>You can reset or delete your Android Advertising ID or manage ad personalization from your device settings where supported by Android.</p>
+<h3>3.2 iOS permissions</h3>
+<ul>
+  <li><strong>Screen Time / FamilyControls permission:</strong> To let you select distracting apps, categories, or web domains and allow ChessUnlock to restrict them using Apple system shielding features.</li>
+  <li><strong>Device Activity monitoring:</strong> To help ChessUnlock reapply restrictions when your selected unlock time or usage threshold ends.</li>
+  <li><strong>Internet:</strong> To fetch chess puzzles, load ads, send analytics events, report crashes, and open feedback/support links.</li>
+  <li><strong>Advertising identifiers, where available:</strong> Used by Google AdMob and Google/Firebase services for ads, analytics, and measurement where permitted by iOS and your device settings.</li>
+</ul>
 
-    <h3>4.3 Firebase Analytics</h3>
-    <p>ChessUnlock uses Firebase Analytics to understand general app usage and improve the app. We use Analytics events to understand things like whether users complete onboarding, solve puzzles, use hints/skips, continue solving puzzles, and unlock apps. We do not intentionally send exact locked app names or package names through Analytics.</p>
+<h2>4) Third-party services</h2>
 
-    <h3>4.4 Firebase Crashlytics</h3>
-    <p>ChessUnlock uses Firebase Crashlytics to receive crash reports and diagnostic information. This helps us find and fix bugs, especially device-specific issues related to overlays, usage access, app locking, ads, and puzzle loading.</p>
+<h3>4.1 Lichess puzzle API</h3>
+<p>
+  ChessUnlock fetches chess puzzles from Lichess using their public puzzle endpoint. This requires an internet connection. We do not control Lichess, and their servers may log standard request data such as IP address as part of normal web operations.
+</p>
+<p class="small">
+  Lichess API reference: <code>https://lichess.org/api/puzzle/next</code>
+</p>
 
-    <h3>4.5 Feedback services</h3>
-    <p>If the app opens an email app or feedback form, the information you submit is voluntary. If a third-party form service is used, that service may process the information you submit according to its own privacy policy.</p>
+<h3>4.2 Google AdMob</h3>
+<p>
+  ChessUnlock uses Google AdMob to show ads. AdMob may collect and process information such as ad interactions, device identifiers, IP address, diagnostic information, and advertising identifiers where available. This is used for advertising, analytics, measurement, fraud prevention, security, and improving ad performance.
+</p>
+<p>
+  You may be able to manage ad personalization, reset advertising identifiers, or limit tracking from your Android or iOS device settings where supported.
+</p>
 
-    <h2>5) How we use information</h2>
-    <ul>
-      <li>To enforce app locking and unlock timers.</li>
-      <li>To show your settings and local progress statistics.</li>
-      <li>To fetch chess puzzles from Lichess.</li>
-      <li>To show ads and rewarded ads through AdMob.</li>
-      <li>To understand app usage and improve the user experience.</li>
-      <li>To detect, diagnose, and fix crashes and bugs.</li>
-      <li>To respond to feedback if you contact us.</li>
-    </ul>
+<h3>4.3 Firebase Analytics</h3>
+<p>
+  ChessUnlock uses Firebase Analytics to understand general app usage and improve the app. We use Analytics events to understand things like whether users complete onboarding, solve puzzles, use hints/skips, continue solving puzzles, and unlock apps. We do not intentionally send exact locked app names, package names, or Screen Time tokens through Analytics.
+</p>
 
-    <h2>6) Data sharing</h2>
-    <p>We do not sell your personal data.</p>
-    <p>Your exact locked apps list and local puzzle statistics are stored on your device and are not uploaded to our own server.</p>
-    <p>Some data is processed by third-party services used in the app:</p>
-    <ul>
-      <li><strong>Lichess</strong> receives puzzle API requests and may process standard request data such as IP address.</li>
-      <li><strong>Google AdMob</strong> processes ad-related data for advertising, analytics, measurement, and fraud prevention.</li>
-      <li><strong>Firebase Analytics</strong> processes app usage analytics events and related device/app information.</li>
-      <li><strong>Firebase Crashlytics</strong> processes crash reports and diagnostic data.</li>
-      <li><strong>Feedback providers</strong> may process information you voluntarily submit through email or a feedback form.</li>
-    </ul>
+<h3>4.4 Firebase Crashlytics</h3>
+<p>
+  ChessUnlock uses Firebase Crashlytics to receive crash reports and diagnostic information. This helps us find and fix bugs, especially device-specific issues related to overlays, usage access, Screen Time shields, app locking, ads, and puzzle loading.
+</p>
 
-    <h2>7) Data retention and deletion</h2>
-    <p>Local app data can be removed at any time by:</p>
-    <ul>
-      <li>Clearing the app’s storage in Android settings, or</li>
-      <li>Uninstalling the app.</li>
-    </ul>
-    <p>Crash, analytics, advertising, and feedback data handled by third-party services may be retained according to those services’ policies and settings.</p>
-    <p>You can reset or delete your Android Advertising ID or manage ad personalization in your Android device settings where supported.</p>
-    <p>If you contact us by email and want your feedback message deleted, you can request deletion using the contact email below.</p>
+<h3>4.5 Apple Screen Time-related frameworks</h3>
+<p>
+  On iOS, ChessUnlock uses Apple Screen Time-related system features such as app selection, device activity monitoring, and app shielding. These features are used only to provide the app-locking functionality that you enable.
+</p>
 
-    <h2>8) Security</h2>
-    <p>We aim to keep ChessUnlock minimal and store lock-related data locally where possible. Firebase services encrypt data in transit using HTTPS and some Firebase services also encrypt data at rest. No method of electronic storage or transmission is 100% secure.</p>
+<h3>4.6 Feedback and email services</h3>
+<p>
+  If the app opens an email app or feedback option, the information you submit is voluntary. Your email provider or any third-party service you use to send feedback may process the information according to its own privacy policy.
+</p>
 
-    <h2>9) Children’s privacy</h2>
-    <p>ChessUnlock is not designed to knowingly collect personal information from children. We do not knowingly collect personal information from children. If you believe a child has provided personal information through feedback or another channel, contact us so we can review and delete it where appropriate.</p>
+<h2>5) How we use information</h2>
+<ul>
+  <li>To let you choose apps to restrict.</li>
+  <li>To enforce app locking, system shields, overlays, and unlock timers.</li>
+  <li>To show your settings and local progress statistics.</li>
+  <li>To fetch chess puzzles from Lichess.</li>
+  <li>To show ads and rewarded ads through AdMob.</li>
+  <li>To understand app usage and improve the user experience.</li>
+  <li>To detect, diagnose, and fix crashes and bugs.</li>
+  <li>To respond to feedback or support requests if you contact us.</li>
+</ul>
 
-    <h2>10) Changes to this policy</h2>
-    <p>We may update this Privacy Policy as the app evolves, including when we add, remove, or change third-party services, analytics, ads, crash reporting, or feedback features. We will update the “Last updated” date above when this policy changes.</p>
+<h2>6) Data sharing</h2>
+<p>
+  We do not sell your personal data.
+</p>
+<p>
+  Your exact locked apps list, selected app tokens, and local puzzle statistics are stored on your device and are not uploaded to our own server.
+</p>
+<p>
+  Some data is processed by third-party services used in the app:
+</p>
+<ul>
+  <li><strong>Lichess:</strong> Receives puzzle API requests and may process standard request data such as IP address.</li>
+  <li><strong>Google AdMob:</strong> Processes ad-related data for advertising, analytics, measurement, fraud prevention, security, and improving ad performance.</li>
+  <li><strong>Firebase Analytics:</strong> Processes app usage analytics events and related device/app information.</li>
+  <li><strong>Firebase Crashlytics:</strong> Processes crash reports and diagnostic data.</li>
+  <li><strong>Email or feedback providers:</strong> May process information you voluntarily submit through feedback or support contact.</li>
+</ul>
 
-    <h2>11) Contact</h2>
-    <p>If you have questions about this Privacy Policy, contact:</p>
-    <ul>
-      <li><strong>Email:</strong> <a href="mailto:aimlessoulapps@gmail.com">aimlessoul.apps@gmail.com</a></li>
-    </ul>
+<h2>7) Data retention and deletion</h2>
+<p>
+  Local app data can be removed at any time by:
+</p>
+<ul>
+  <li>Clearing the app’s storage in Android settings, or</li>
+  <li>Uninstalling the app from Android or iOS.</li>
+</ul>
+<p>
+  Crash, analytics, advertising, and feedback data handled by third-party services may be retained according to those services’ policies and settings.
+</p>
+<p>
+  You can manage advertising identifiers or ad personalization in your Android or iOS device settings where supported.
+</p>
+<p>
+  If you contact us by email and want your feedback or support message deleted, you can request deletion using the contact email below.
+</p>
 
-    <p class="small">App: ChessUnlock • Package: <code>com.aimlessoul.chessunlock</code></p>
+<h2>8) Security</h2>
+<p>
+  We aim to keep ChessUnlock minimal and store lock-related data locally where possible. Firebase services use HTTPS for data in transit, and some Firebase services also encrypt data at rest. No method of electronic storage or transmission is 100% secure.
+</p>
+
+<h2>9) Children’s privacy</h2>
+<p>
+  ChessUnlock is not designed to knowingly collect personal information from children. We do not knowingly collect personal information from children. If you believe a child has provided personal information through feedback or another channel, contact us so we can review and delete it where appropriate.
+</p>
+
+<h2>10) Changes to this policy</h2>
+<p>
+  We may update this Privacy Policy as the app evolves, including when we add, remove, or change third-party services, analytics, ads, crash reporting, feedback features, or app-locking functionality. We will update the “Last updated” date above when this policy changes.
+</p>
+
+<h2>11) Contact</h2>
+<p>
+  If you have questions about this Privacy Policy or need support, contact:
+</p>
+<ul>
+  <li><strong>Email:</strong> <a href="mailto:aimlessoul.apps@gmail.com">aimlessoul.apps@gmail.com</a></li>
+</ul>
+
+<p class="small">
+  App: ChessUnlock<br />
+  Android package: <code>com.aimlessoul.chessunlock</code><br />
+  iOS bundle ID: <code>com.aimlessoul.chessunlock</code>
+</p>
+```
+
   </main>
 </body>
 </html>
